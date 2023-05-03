@@ -6,17 +6,18 @@ import (
 )
 
 func main() {
-	var advina = 14
+	var adivina = 99
 
 	count := 10
 
-	for count > 0 {
+	for {
 		var numRandom = rand.Intn(100) + 1
-		fmt.Println(numRandom)
-		if numRandom == advina {
+		if numRandom == adivina {
+			fmt.Println("Adivinaste! El numero era ", numRandom, " en ", count, " intentos")
 			break
 		}
-		count--
+		count++
+		// fmt.Println(numRandom) //imprime el numero random
 	}
 
 }
